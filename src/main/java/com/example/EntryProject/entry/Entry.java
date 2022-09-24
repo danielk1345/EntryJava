@@ -22,9 +22,6 @@ public class Entry {
     private LocalDate endDate;
     private String quickNotes;
 
-    public Entry() {
-    }
-
     public Entry(Long id, String name, LocalDate startDate, String description, LocalDate endDate, String quickNotes) {
         this.id = id;
         this.name = name;
@@ -33,13 +30,7 @@ public class Entry {
         this.endDate = endDate;
         this.quickNotes = quickNotes;
     }
-    public Entry(String name, LocalDate startDate, String description, LocalDate endDate, String quickNotes) {
-        this.name = name;
-        this.startDate = startDate;
-        this.description = description;
-        this.endDate = endDate;
-        this.quickNotes = quickNotes;
-    }
+    
 
     // Getters (returns the value) and setters (mutates the value)
     public Long getId() {
